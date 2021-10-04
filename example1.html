@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!-- Все наименования фирмы указаны как GTL, создать переменную? -->
+
+<head class="head">
+    <TITLE>Достижения</TITLE>
+    <script src="js/main.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Мой CSS далее-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- шрифт Опен Санс для текста и робото для заголовков-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto+Slab:wght@700&family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet">
+
+    <!-- CSS only -->
+
+    <!-- Иконки-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body class="">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand" id="dark-orange" href="index.html">GTL</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" id="dark-orange" href="index.html">Главная <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="dark-orange" href="random.html">Случайный поиск</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="dark-orange" href="coach.html">Наставники</a>
+                    </li>
+                    <li class="nav-item dropdown" id="dark-orange">
+                        <a class="nav-link dropdown-toggle" id="dark-orange" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Сотрудники
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" id="dark-orange" href="#">Команда</a>
+                            <a class="dropdown-item" id="dark-orange" href="#">Стать участником проекта</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" id="dark-orange" href="#">Правила и стандарты платформы</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="dark-orange" href="#" data-toggle="modal" data-target="#exampleModalLong">Регистрация/вход</a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">GTL pass</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active col-sm-6 col-lg-6 col-md-6" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Регистрация</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link col-sm-6 col-lg-6 col-md-6 offset-2" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Авторизация</a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Eмеил адрес</label>
+                                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ваш меил">
+                                                        <small id="emailHelp" class="form-text text-muted"></small>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputPassword1">Пароль</label>
+                                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ваш пароль">
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
+                                                        <label class="form-check-label" for="exampleCheck1">Я согласен с <a href="#">политикой конфеденциальности</a></label>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Готово</button>
+                                                </form>
+                                            </div>
+
+
+                                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Eмеил адрес</label>
+                                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ваш меил">
+                                                        <small id="emailHelp" class="form-text text-muted"></small>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputPassword1">Пароль</label>
+                                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ваш пароль">
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
+                                                        <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Готово</button>
+                                                </form>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Конец модального окна -->
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main class="bg-gold">
+        <div class="row text-center">
+            <div class="text-center col-sm-12 col-md-12 col-lg-12">
+               <a href="coach-office.html" class="btn btn-primary"><p>Назад</p></a>
+                <h1>Аккаунт наставника</h1>
+                <p>{{firstName}}{{nickName}}{{lastName}}</p>
+            </div>
+            <div class="co-sm-4 col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/test-coach-img.jpg">
+                    <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                     <div class="mt-3">
+                        <span class="fa fa-vk"></span>
+                        <span class="fa fa-youtube"></span>
+                        <span class="fa fa-telegram"></span>
+                        <span class="fa fa-twitch"></span>
+                        <span class="fa fa-instagram"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-12 col-md-6 col-lg-4">
+               <p>Уровень звезд</p>
+                   <p>3</p>
+                 
+                    
+                    <label class="col-sm-10 col-md-10 col-lg-10 w-100 col-form-label">Уровень пользователя
+                        <div class="col-sm-10 col-md-10 col-lg-10 w-100">
+                            <input type="text" readonly class="form-control-plaintext" id="Lvl" value="5">
+                        </div>
+                        <label for="expLvl" class="w-100  col-form-label">Опыта получено</label>
+                        <div class="col-sm-10 col-md-10 col-lg-10">
+                            <input type="text" readonly class="form-control-plaintext" id="expLvl" value="500/1500">
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+
+                        </div>
+                    </label>
+                <h3>Игра 1</h3>
+                <p>{{gameOne}}</p>
+                <p>{{mainStyle}}</p>
+
+                <h3>Игра 2</h3>
+                <p>{{gameTwo}}</p>
+                <p>{{mainStyleTwo}}</p>
+
+                <h3>Игра 3</h3>
+                <p>{{gameThree}}</p>
+                <p>{{mainStyleThree}}</p>
+                
+               
+                <p>{{contactsForLearn}}</p>
+                <p>{{youBisList}}</p>
+                <p>{{infoCoach}}</p>
+                <p>{{ButtonOnMainGameProfile}}</p>
+                
+                
+            </div>
+           
+            <div class="text-center col-sm-12 col-md-6 col-lg-4 text-center">
+               <div>
+                    <h3>Расписание</h3>
+                    <!-- Только коучу видно свое расписание-->
+                    <div>
+                        <a href="#">
+                            <div class="container bg-danger text-white">
+                                <img src="img/test-coach-img.jpg" alt="Avatar" style="width:90px">
+                                <p><span>Кристина "MinusDva" Антонова</span> 5 звезд</p>
+                                <p>Занятие начнется через {{timeToCoach}}</p>
+                                <!-- Это будущий урок по расписанию. Система показывает парочку записей ближайших. Бeдет ок возможность зайти в профиль по клику. Первая рамка - это запись к каучу, а вторая - это кауч уведомление как если бы человек (кауч) должен был бы пойти на занятие, а после провести сам другое-->
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="container bg-success text-white">
+                        <img src="img/test-coach-img.jpg" alt="Avatar" style="width:90px">
+                        <p><span>Кристина "MinusDva" Антонова</span> 5 звезд</p>
+                        <p>Вы начнете вести занятие через {{timeToCoach}}</p>
+                    </div>
+
+                </div>
+                
+                
+                
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-4 text-center">
+                <p>Все права защищены &copy;{{trademark}}, 2019-{{year}}</p>
+                <p>Политика <a href="#">конфеденциальности</a></p>
+                <p>Используя этот сайт вы автоматический принимаете <a href="#">пользовательское соглашение</a> и <a href="#">правила использования сервиса GTL</a></p>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 text-center">
+                <a href="#">Партнеры {{trademark}}</a><br>
+                <a href="#">Стать партнером {{trademark}}</a>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-4 text-center">
+                <h2>Меню</h2>
+                <a href="#">Главная</a><br>
+                <a href="#">Случайный поиск</a><br>
+                <a href="#">Наставники</a><br>
+                <a href="#">Команда</a><br>
+                <a href="#">Стать участником проекта</a><br>
+            </div>
+        </div>
+    </footer>
+    <!-- bootstrap-->
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>

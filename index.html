@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!-- Все наименования фирмы указаны как GTL, создать переменную? -->
+
+<head class="head">
+    <TITLE>GTL, play like a pro!</TITLE>
+    <script src="js/main.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- шрифт Опен Санс для текста и робото для заголовков-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto+Slab:wght@700&family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Иконки-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Свой ксс-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body class="bg-body" id="bg-body">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand" id="dark-orange" href="index.html">GTL</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" id="dark-orange" href="index.html">Главная <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="dark-orange" href="random.html">Случайный поиск</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="dark-orange" href="coach.html">Наставники</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="dark-orange" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Сотрудники
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" id="dark-orange" href="#">Команда</a>
+                            <a class="dropdown-item" id="dark-orange" href="#">Стать участником проекта</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" id="dark-orange" href="#">Правила и стандарты платформы</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="dark-orange" href="#" data-toggle="modal" data-target="#exampleModalLong">Регистрация/вход</a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">GTL pass</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active col-sm-6 col-lg-6 col-md-6" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Регистрация</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link col-sm-6 col-lg-6 col-md-6 offset-2" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Авторизация</a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Eмеил адрес</label>
+                                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ваш меил">
+                                                        <small id="emailHelp" class="form-text text-muted"></small>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputPassword1">Пароль</label>
+                                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ваш пароль">
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
+                                                        <label class="form-check-label" for="exampleCheck1">Я согласен с <a href="#">политикой конфеденциальности</a></label>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Готово</button>
+                                                </form>
+                                            </div>
+
+
+                                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Eмеил адрес</label>
+                                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ваш меил">
+                                                        <small id="emailHelp" class="form-text text-muted"></small>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputPassword1">Пароль</label>
+                                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ваш пароль">
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
+                                                        <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Готово</button>
+                                                </form>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Конец модального окна -->
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
+                </form>
+            </div>
+        </nav>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/gamer.jpg" alt="Los Angeles" class="screen">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/learn-girl.jpg" alt="Chicago" class="screen">
+
+                </div>
+                <div class="carousel-item">
+                    <img src="img/learn-girl.jpg" alt="New York" class="screen">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
+
+
+    </header>
+    <!-- Реклама-->
+    <main class="row mt-0 bg-gold col-lg-12 w-100" id="bg-gold">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active place-200">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        
+                    </div>
+                </div>
+                <div class="carousel-item place-200">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        
+                    </div>
+                </div>
+                <div class="carousel-item place-200">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        
+                    </div>
+                </div>
+                <div class="carousel-item place-200">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        
+                    </div>
+                </div>
+                <div class="carousel-item place-200">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Предыдущий</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Следующий</span>
+            </a>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+            <h2>{{trademark}}</h2>
+        </div>
+        <div class="text-center col-sm-12 col-md-6 col-lg-4 row bg-dark-orange rounded-about  hover offset-lg-2">
+            <div class="p-5">
+                <h2 class="m-5">Приветствуем вас на сайте платформы {{trademark}}</h2>
+                <p>Платформа {{trademark}} разработана геймерами и для геймеров! Тут вы сможете набраться опыта, получая знания от опытных игроков! Вступить в команду для турниров на базе {{trademark}} с получением в ваше распоряжение наставника из числа участников проекта, а по достижении видимых результатов получить предложение на участие в работе нашего проекта в виде наставника, аналитика или менеджера!
+                </p>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4 bg-dark-orange hover offset-lg-1 p-5 mt-5 rounded-about">
+            <p>На данный момент наш сервис занимаеться обучением лиц достигших <span class="red-circle">18</span> лет. Наша цель - это создание киберспортивной организации занимающейся подготовкой и сопровождением. Мы не будем заставлять вас играть целыми днями, а дадим именно самую нужную информацию под ваш уровень игры. У вас останется время на другие увлечения. </p>
+        </div>
+        <div class="w-100 height-25"></div>
+        <div class="bg-dark-orange hover p-3 rounded-about m-5 p-5">
+            <h3>Ну что? Решился? Тогда вот краткий материал по нашей системе.<br>*интерфейс может отличаться</h3>
+        </div>
+        <div class="bg-dark-orange hover p-5 rounded-about  offset-lg-1 col-sm-12 col-md-6 col-lg-4 hover-roll ">
+            <p>Какбы Вы не зашли к нам - запомните как нас найти! Пишите в Google или Яндекс: GTL, play like a pro. Будем ждать новой встречи с Вами !</p>
+            <img src="img/yandex-find.jpg" alt="Поиск сайта через Яндекс" class="w-100">
+        </div>
+        <div class="w-100 height-25"></div>
+        <div class="bg-dark-orange hover p-3 rounded-about  offset-lg-4 col-sm-12 col-md-6 col-lg-4 p-5">
+            <form>
+                <h3>Далее регистрация ! Без нее Наставник не сможет отслеживать ваш прогресс.</h3>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Eмеил адрес</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ваш меил">
+                    <small id="emailHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Пароль</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ваш пароль">
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
+                    <label class="form-check-label" for="exampleCheck1">Я согласен с <a href="#">политикой конфеденциальности</a></label>
+                </div>
+                <button type="submit" class="btn btn-primary">Готово</button>
+                <p>Форма настоящая! Регистрируйся, мы не смотрим.</p>
+            </form>
+        </div>
+        <div class="height-10 w-100"></div>
+        <div class="bg-dark-orange hover p-3 rounded-about  offset-lg-2 col-sm-12 col-md-6 col-lg-4 p-5">
+            <p>В аккаунте Вас ждут элементы социальной сети. В том числе вкладки "Друзья","Дневник" в котором Вам будут давать задание для закрепления результата. "Закладки" для самых интересных Наставников.</p>
+            <img src="img/profile.png" alt="ккаунт платформы GTL(общий)" class="w-100">
+        </div>
+           <div class="w-100"></div>
+            <div class="bg-dark-orange hover p-3 rounded-about  offset-lg-1 col-sm-12 col-md-6 col-lg-4 p-5">
+            <p>Мы рассматриваем заявки на получение статуса "Наставник", которые можно отправлять из личного кабинета.</p>
+        </div>
+        <div class="mexplvl bg-dark-orange offset-md-3 col-sm-12 col-md-6 col-lg-4 row text-center  hover rounded-about p-5 mt-5">
+            <label for="Lvl" class="col-sm-2 col-form-label">Уровень пользователя</label>
+            <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext text-center" id="Lvl" value="27">
+            </div>
+            <label for="expLvl" class="col-sm-2 col-form-label">Опыта получено</label>
+            <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext text-center" id="expLvl" value="500/1500">
+            </div>
+
+
+            <div class="progress w-100">
+                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+
+            <p>У нас Вы видите свой результат будь Вы Наставник или обучаемый.</p>
+
+        </div>
+        <div class="bg-dark-orange hover p-3 rounded-about  offset-lg-2 col-sm-12 col-md-6 col-lg-4 p-5">
+            <p>Для удобства у нас есть расписание. Оно покажет время до занятия!</p>
+            <img src="img/profile-shendule.png" class="w-100" alt="асписание GTL">
+        </div>
+        <div class="height-10 w-100"></div>
+        <div class="bg-dark-orange hover p-3 rounded-about  offset-lg-2 col-sm-12 col-md-6 col-lg-4 p-5">
+            <p>Подписывайтесь на нас в социальных сетях:</p>
+            <a href="https://vk.com/gameteamleader" target="_blank"><span class="fa fa-vk width-social"></span></a>
+            <a href="https://t.me/itsgtl" target="_blank"><span class="fa fa-telegram width-social"></span></a>
+            <a href="https://www.instagram.com/gtlplay" target="_blank"><span class="fa fa-instagram width-social"></span></a>
+        </div>
+        <div class="height-25 w-100"></div>
+        <div class="bg-dark-orange hover p-3 rounded-about  offset-lg-4 col-sm-12 col-md-6 col-lg-4 p-5">
+            <h3>Почему нужны занятия с Наставником?</h3>
+            <p>Наставник - это человек знающий про игру очень много. Даже при среднем уровне Наставника он вполне сможет дать наставления начинающему игроку. Наставник дает всю самую важную информацию и задание по итогу, для закрепления результата. Наставник видит вектор развития и слабые места. С Наставником тренировка плодотворнее. Для простого повышения уровня игры Вам хватит 1-2 часа в день.</p>
+        </div>
+        <div class="col-sm-12 col-lg-12 col-lg-12 m-5">
+            <p>Мы поддерживаем эти игры:</p>
+        </div>
+        <div class="bg-dark-orange hover p-3 rounded-about  col-sm-12 col-md-12 col-lg-12 p-5 d-flex flex-wrap">
+            <img src="img/worldofwarcraft.jpg" alt="Worl of WArcraft с Наставником" class="width-350 mr-auto">
+            <img src="img/overwatch.jpg" alt="OverWatch с Наставником" class="width-350 mr-auto">
+            <img src="img/Heroesofthestorm.jpg" alt="HotS с Наставником" class="width-350 mr-auto">
+            <img src="img/valorant.jpg" alt="Valorant с Наставником" class="width-350 mr-auto">
+            <img src="img/dota2.jpg" alt="Valorant с Наставником" class="width-350 mr-auto">
+            <img src="img/hearthstone.jpg" alt="Valorant с Наставником" class="width-350 mr-auto">
+        </div>
+        <div class="height-25 w-100"></div>
+        <div class="bg-dark-orange hover p-3 rounded-about  offset-lg-4 col-sm-12 col-md-6 col-lg-4 p-5">
+            <h3>Какие навыки прокачаете?</h3>
+            <p>За счет навыков полученных во время игр Вы повысите:<br>
+                - Знание английского.<br>
+                - Повысите реакцию.<br>
+                - Повысите концетрацию.<br>
+                сможете:<br>
+                - Развить логику.<br>
+                - Развить аналитику.</p>
+        </div>
+        <div class="height-10 w-100"></div>
+        <div class="bg-dark-orange hover p-3 rounded-about  offset-lg-4 col-sm-12 col-md-6 col-lg-4 p-5">
+            <h3 class="mr-5">Вред здоровью?</h3>
+            <p class="mr-5">Во время игр получить травму практический не возможно. НО есть вред для физической формы ! Именно потому GTL стримиться прививать здоровый образ жизни и занятия спортом в различных спортивных организациях<br>
+                <a href="#" class="btn btn-lg btn-info" terget="_blank">Посмотрите на них тут</a>
+        </div>
+        <div class="height-10 w-100"></div>
+        <div class="col-sm-12 col-md-6 col-sm-6 col-xl-6 offset-lg-1 bg-dark-orange bg-dark-orange hover rounded-about">
+            <h2 class="m-5">Получить exp!</h2>
+            <div class="width"></div>
+            <p class="m-5">Мы все через это проходили. То чувство, когда ты молодой и горячий, но тебе не достает опыта. GTL призван исправить эту проблему и ускорить получение Экспы. На нашей платформе вы сможете в короткие сроки получить отличную базу как для простых каток в компании друзей, так и для получения призовых мест на различных турнирах. Все зависит только от Вас!</p>
+            <p class="m-5">Вам понадобиться:<br>
+                - Мышка и клавиатура.<br>
+                - Компьютер с интернетом и игрой, которой вы желаете обучаться. Мы не требуем ваш аккаунт! <br>
+                - Микрофон и колонки или наушники. Связь для разговора.<br>
+
+            </p>
+            <a class="btn btn-primary btn-block slidein rounded-about
+               " href="random.html">
+                <p>Я готов !</p>
+            </a>
+        </div>
+        <div class="alert alert-info position-fixed fixed-bottom" role="alert">
+            <p>We use cookies! You accept with that or leave</p>
+            <p>Мы используем кукис ! И вы согласны с этим, в противном случае покиньте сайт</p><button type="button" class="btn btn-success" data-dismiss="alert">OK</button><a href="https://yandex.ru/" class="btn btn-danger">LEAVE</a>
+        </div>
+        <div class="height-25 w-100"></div>
+        <div class="bg-dark-orange hover p-3 rounded-about  offset-lg-4 col-sm-12 col-md-6 col-lg-4 p-5 row">
+            <h3 class="m-5">Какие карьерные треки возможны в перспективе?</h3>
+            <div class="m-2">
+                <h3>Менеджер</h3>
+                <p>Менеджер занимается нуждами команды. База для тренингов, питание, билеты на поезд или самолет - это все про него.</p>
+            </div>
+            <div class="m-2">
+                <h3>Аналитик</h3>
+                <p>Просмотр игр, выявление тенденуций и составление плана на турнир. Эти люди продумывают куда двинется киберспорт в следующие пару месяцев. </p>
+            </div>
+            <div class="m-2">
+                <h3>Наставник</h3>
+                <p>Его цель передавать опыт игры и умножать навыки игроков. Он может заниматься подготовкой абсолютно разных игроков. </p>
+            </div>
+        </div>
+        <div style="height: 35vh;" class="w-100"></div>
+
+        <div class="col-sm-12 col-md-6 col-sm-6 col-xl-6 offset-lg-3 text-center bg-dark-orange rounded-about hover p-5">
+            <h3>Стать Наставником!</h3>
+            <p>У Вас огромный опыт игр? Победы не приносят былого удовлетворения? Вы знаете ходы противника задолго до их действий? Поздравляем! Вы достигли определенного результата, но что дальше? Где это применять? Теперь у Вас есть возможность реализовывать полученные навыки! Влияйте на будущее уже сегодня! Научите игроков самым крутым финтам и повышайте уровень кибер-спорта. Весь функционал на GTL!</p>
+            <a href="#" class="btn btn-lg btn-primary btn-block press rounded-about">
+                <p>Подать заявку</p>
+            </a>
+        </div>
+        <div class="col-sm-12 col-md-6 col-sm-6 col-xl-6 offset-lg-3 bg-dark-orange rounded-about hover p-5 mt-5">
+            <h3>Партнеры {{Trademark}}</h3>
+            <a href="http://pvpgroup.tilda.ws/" target="_blank"><dov class="h1 text-bold m-5 bg-light text-dark">PvPGroup</dov></a>
+            <a href="join-the-team.html" class="btn btn-primary press btn-lg">Стать партнером</a>
+        </div>
+        <siv class="rounded-about hover p-5 mt-5 col-sm-12 col-md-6 col-sm-6 col-xl-6 offset-lg-3 bg-dark-orange"><p>Мы против буллинга ! Если вы с ним столкнулись, то зайдите <a target="_blank" href="https://vk.com/travlinet" >сюда!</a></p></siv>
+        <div style="height: 35vh;" class="row w-100"></div>
+        <div class="col-sm-12 text-center active-area">
+            <div class="col-sm-12">
+                <h2>Почему мы?</h2>
+            </div>
+            <div style="height: 10vh;" class="row w-100"></div>
+            <div class="row  justify-content-around">
+                <div class="col-sm-12 col-md-6 col-lg-4 bg-dark-orange m-1 hover">
+                    <h3>Мы знаем игры!</h3>
+                    <p>Мы понимаем особенности игр! Понимаем, потому что сами играли или играем в них!</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 bg-dark-orange m-1 hover">
+                    <h3>Удобный интерфейс</h3>
+                    <p>Мы старались продумать каждую деталь для вашего удобства в обучении или наставничестве. Платформа разработана специально для этого.</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 bg-dark-orange m-1 hover">
+                    <h3>Play like a pro!</h3>
+                    <p>Играй, как про - это не просто наш слоган. Мы стараемся прививать профессиональную игру всем!</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 bg-dark-orange m-1 hover">
+                    <h3>Мы продаем скилл, а не пиксели!</h3>
+                    <p>Сейчас вы можете купить в играх почти все! Будь это звание, редкая вещица или валюта, но приносит ли оно наслаждение? У нас вы играете сами! Вы учитесь у опытных игроков и применяете знания на практики!</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 bg-dark-orange m-1 hover">
+                    <h3>Разные направления</h3>
+                    <p>Вы можете найти наставников на любой аспект игры. Будь это пвп, пве и даже экономика!</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 bg-dark-orange m-1 hover">
+                    <h3>Уровни квалификаций</h3>
+                    <p>Тут качаете лвл не только вы, но и наши наставники. Чем выше уровень наставника, тем большему он может научить!</p>
+                </div>
+            </div>
+        </div>
+        <div style="height: 20vh;" class="row w-100"></div>
+        <div class="col-sm-12 text-center">
+            <h2>Часто задаваемые вопросы.</h2>
+        </div>
+        <div style="height: 10vh;" class="row w-100"></div>
+        <!-- Аккардион-->
+        <div class="accordion w-100" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left btn-primary text-light" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Какой смысл тут регистрироваться?
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body p-5">
+                        Все просто! Мы делали сайт для обучения.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed btn-primary text-light" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Сколько стоит занятие на вашем сайте?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body p-5">
+                        Мы не занимаемся коммерцией, но Наставник может оказывать консультационные услуги. Драйв аккаунта запрещен! Мы советуем делать это легально и оплачивая налоги с занятий.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed btn-primary text-light" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Когда я попаду в киберспорт?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body p-5">
+                        Тут все зависит от Вас! Каждый игрок - это индивидуальная личность. Мы лишь даем Вам возможность ускорить Вашу подготовку. 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- аккардион - конец-->
+        <div><a class="btn btn-lg btn-secondary">Задайте свой вопрос</a></div>
+         <!-- Реклама -->
+         <div id="carouselExampleCaptions2" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active place-200">
+                    <img src="img/dota2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                       
+                    </div>
+                </div>
+                <div class="carousel-item place-200">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        
+                    </div>
+                </div>
+                <div class="carousel-item place-200">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                       
+                    </div>
+                </div>
+                <div class="carousel-item place-200">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                       
+                    </div>
+                </div>
+                <div class="carousel-item place-200">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Предыдущий</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Следующий</span>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-4 text-center">
+                <p>Все права защищены &copy;{{trademark}}, 2019-{{year}}</p>
+                <p>Политика <a href="#">конфеденциальности</a></p>
+                <p>Используя этот сайт вы автоматический принимаете <a href="#">пользовательское соглашение</a> и <a href="platform-standards.html">правила и стандарты сервиса GTL</a></p>
+                <p>GTL не занимаеться коммерцией ! GTL - это проект сделанный на фане ! Мы не оказываем образовательных услуг.</p>
+            </div>
+           <div class="col-sm-6 col-md-6 col-lg-4 text-center">
+                <a href="#">Партнеры {{trademark}}</a><br>
+                <a href="#">Стать партнером {{trademark}}</a>
+                <div class="mt-3">
+                    <p>Мы в социальных сетях:</p>
+                    <a href="https://vk.com/gameteamleader" target="_blank"><span class="fa fa-vk width-social"></span></a>
+                    <span class="fa fa-youtube width-social"></span>
+                    <a href="https://t.me/itsgtl " target="_blank"><span class="fa fa-telegram width-social"></span></a>
+                    <span class="fa fa-twitch width-social"></span>
+                    <a href="https://www.instagram.com/gtlplay " target="_blank"><span class="fa fa-instagram width-social"></span></a>
+                </div>
+                <p>По вопросам размещения вашей рекламы заходите <a href="advertising.html">сюда</a>.</p>
+            </div>
+
+
+            <div class="col-sm-6 col-md-6 col-lg-4 text-center">
+                <h2>Меню</h2>
+                <a href="#">Главная</a><br>
+                <a href="#">Случайный поиск</a><br>
+                <a href="#">Наставники</a><br>
+                <a href="#">Команда</a><br>
+                <a href="#">Стать участником проекта</a><br>
+            </div>
+        </div>
+    </footer>
+    <!-- bootstrap-->
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body></html>

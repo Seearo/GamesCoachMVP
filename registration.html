@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!-- Все наименования фирмы указаны как GTL, создать переменную? -->
+
+<head class="head">
+    <TITLE>Запись к {{nickName}}</TITLE>
+    <script src="js/main.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- шрифт Опен Санс для текста и робото для заголовков-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto+Slab:wght@700&family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Иконки-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body class="bg-body">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand" id="dark-orange" href="index.html">GTL</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" id="dark-orange" href="index.html">Главная <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="dark-orange" href="random.html">Случайный поиск</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="dark-orange" href="coach.html">Наставники</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="dark-orange" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Сотрудники
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" id="dark-orange" href="#">Команда</a>
+                            <a class="dropdown-item" id="dark-orange" href="#">Стать участником проекта</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" id="dark-orange" href="#">Правила и стандарты платформы</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="dark-orange" href="#" data-toggle="modal" data-target="#exampleModalLong">Регистрация/вход</a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">GTL pass</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active col-sm-6 col-lg-6 col-md-6" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Регистрация</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link col-sm-6 col-lg-6 col-md-6 offset-2" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Авторизация</a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Eмеил адрес</label>
+                                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ваш меил">
+                                                        <small id="emailHelp" class="form-text text-muted"></small>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputPassword1">Пароль</label>
+                                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ваш пароль">
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
+                                                        <label class="form-check-label" for="exampleCheck1">Я согласен с <a href="#">политикой конфеденциальности</a></label>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Готово</button>
+                                                </form>
+                                            </div>
+
+
+                                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Eмеил адрес</label>
+                                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ваш меил">
+                                                        <small id="emailHelp" class="form-text text-muted"></small>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputPassword1">Пароль</label>
+                                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ваш пароль">
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
+                                                        <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Готово</button>
+                                                </form>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Конец модального окна -->
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main class="bg-gold">
+        <div class="month">
+            <ul>
+                <li class="prev">❮</li>
+                <li class="next">❯</li>
+                <li>
+                    August<br>
+                    <span style="font-size:18px">2017</span>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="weekdays">
+            <li>Пн</li>
+            <li>Вт</li>
+            <li>Ср</li>
+            <li>Чт</li>
+            <li>Пт</li>
+            <li>Сб</li>
+            <li>Вс</li>
+        </ul>
+
+        <ul class="days">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li><span class="active">10</span></li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+            <li>31</li>
+        </ul>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                <h1>Занятия на {{pickDate}}!</h1>
+                <p>Запись к {{nickName}}</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm-12 col-md-6 col-lg-4 ">
+                <p>Ночь.</p>
+                <div class="form-check ">
+                    <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">00:00 - 00:45</label>
+
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">01:00 - 01:45</label>
+
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">02:00 - 02:45</label>
+
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">03:00 - 03:45</label>
+
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">04:00 - 04:45</label>
+
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">05:00 - 05:45</label>
+
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4  ">
+                <p>Утро.</p>
+                <div class="form-check">
+                    <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">06:00 - 06:45</label>
+
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">07:00 - 07:45</label>
+
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">08:00 - 08:45</label>
+
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">09:00 - 09:45</label>
+
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">10:00 - 10:45</label>
+
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">11:00 - 11:45</label>
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <p>День.</p>
+                <div class="form-check">
+                    <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">12:00 - 12:45</label>
+
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">13:00 - 13:45</label>
+
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">14:00 - 14:45</label>
+
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">15:00 - 15:45</label>
+
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">16:00 - 16:45</label>
+
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">17:00 - 17:45</label>
+
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <p>Вечер.</p>
+                <div class="form-check">
+                    <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">18:00 - 18:45</label>
+
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">19:00 - 19:45</label>
+
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">20:00 - 20:45</label>
+
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">21:00 - 21:45</label>
+
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">22:00 - 22:45</label>
+
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label"><input class="form-check-input" type="checkbox" value="">23:00 - 23:45</label>
+                </div>
+            </div>
+            <!-- Окно двойного назначения. тут регистрируются все. и юзеры, и гости. Гостям нужны доп поля для емейла, телефона-->
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="form-group">
+                    <div class="form-group col-md-12 col-sm-12 col-lg-12">
+                        <label for="inputState">Ваша игра</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Выбирайте...</option>
+                            <option>World of Warcraft</option>
+                            <option>Overwatch</option>
+                            <option>StarCraft 2</option>
+                            <option>Dota 2</option>
+                            <option>Valorant</option>
+                            <option>Hearthstone</option>
+                        </select>
+                        <label for="inputState" class="">Направление</label>
+                        <select id="inputState" class="form-control w-100">
+                            <option selected>Выбирайте...</option>
+                            <option>PvP</option>
+                            <option>PvE</option>
+                            <option>Экономика</option>
+                            <option>PvE и PvP</option> 
+                            <option>Выбрать все направления</option>
+                        </select>
+                        <!-- Поле выше должно брать значения из поля кауча в аккаунте с его играми если человек записывается не фильтруя тренеров по играм. Так он не сможет записаться на несуществующую игру у кауча. По пику даты в календаре вылазит 2 менюшки: первая показывает тебе слоты на занятия исходя из выбранных наставником в расписании, а вторая дает ввести данные для регистрации на наставника (для связи), если ты не зареган в системе!-->
+                    </div>
+                    <div class="form-group col-md-12 col-sm-12 col-lg-12">
+                        <label>Ваш телефон<select id="inputState" class="form-control">
+                                <option selected>Выбирайте...</option>
+                                <option>Российская Федерация</option>
+                                <option>Украина</option>
+                                <option>Беларусь</option>
+                                <option>Казахстан</option>
+                            </select>
+                            <input class="form-control" type="tel">
+                        </label>
+                        <label>Ваш меил<input class="form-control" type="email">
+                        </label>
+                    </div>
+
+                    <label>Контактная информация <textarea placeholder="Видна только наставнику и модераторам!" cols="15" rows="8" type="text" class=" form-control col-sm-12 col-md-12 col-lg-12"></textarea>
+                    </label>
+                </div>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-4">
+                <p>Нажимая вы принимаете правила платформы GTL и политику конфеденциальности</p>
+                <button class="btn btn-primary" type="submit">Записаться!</button>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-4 text-center">
+                <p>Все права защищены &copy;{{trademark}}, 2019-{{year}}</p>
+                <p>Политика <a href="#">конфеденциальности</a></p>
+                <p>Используя этот сайт вы автоматический принимаете <a href="#">пользовательское соглашение</a> и <a href="#">правила использования сервиса GTL</a></p>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 text-center">
+                <a href="#">Партнеры {{trademark}}</a><br>
+                <a href="#">Стать партнером {{trademark}}</a>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-4 text-center">
+                <h2>Меню</h2>
+                <a href="#">Главная</a><br>
+                <a href="#">Случайный поиск</a><br>
+                <a href="#">Наставники</a><br>
+                <a href="#">Команда</a><br>
+                <a href="#">Стать участником проекта</a><br>
+            </div>
+        </div>
+    </footer>
+    <!-- bootstrap-->
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>
